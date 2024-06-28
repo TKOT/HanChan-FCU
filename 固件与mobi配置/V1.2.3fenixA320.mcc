@@ -1,0 +1,547 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="cede7f52-162a-4a8c-b44d-9d4fbf314429">
+      <active>true</active>
+      <description>SPEED 显示</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:N_FCU_SPEED)" UUID="ee3f0a8c-fb85-430b-8659-5597c6b66a4f" />
+        <test type="Float" value="123" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="HanChan-V1-2-3/ SN-935-AAE" trigger="normal" ledAddress="SPEEDDisplay" ledConnector="1" ledModuleSize="8" ledPadding="True" ledPaddingChar="0" ledDigits="5,6,7" />
+        <preconditions>
+          <precondition type="config" active="true" ref="818e3167-b45b-44dc-8432-dc0a20fcedd0" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b2f40631-2692-46a1-8dc4-8da21fa381c1">
+      <active>true</active>
+      <description>SPEED 马赫显示</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:N_FCU_SPEED)" UUID="ee3f0a8c-fb85-430b-8659-5597c6b66a4f" />
+        <test type="Float" value="123" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="HanChan-V1-2-3/ SN-935-AAE" trigger="normal" ledAddress="SPEEDDisplay" ledConnector="1" ledModuleSize="8" ledPadding="True" ledPaddingChar="0" ledDigits="5,6,7" ledDecimalPoints="7" />
+        <preconditions>
+          <precondition type="config" active="true" ref="818e3167-b45b-44dc-8432-dc0a20fcedd0" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="818e3167-b45b-44dc-8432-dc0a20fcedd0">
+      <active>true</active>
+      <description>SPEED 马赫标识</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:I_FCU_MACH_MODE)" UUID="cf9c73a0-ab34-455b-866d-f47c09d19336" />
+        <test type="Float" value="0" />
+        <modifiers />
+        <display type="Display Module" serial="HanChan-V1-2-3/ SN-935-AAE" trigger="normal" ledAddress="SPEEDDisplay" ledConnector="1" ledModuleSize="8" ledPadding="False" ledPaddingChar="0" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e874ee0d-1ad7-4269-93f8-b4ccede6e57a">
+      <active>true</active>
+      <description>HDG 显示</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:N_FCU_HEADING)" UUID="f9fd0ffc-5343-4427-9399-21d308a99703" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="HanChan-V1-2-3/ SN-935-AAE" trigger="normal" ledAddress="SPEEDDisplay" ledConnector="1" ledModuleSize="8" ledPadding="True" ledPaddingChar="0" ledDigits="0,1,2" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="343c819c-269f-4016-8ba0-11d7b2ecd248">
+      <active>true</active>
+      <description>ALT显示</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:N_FCU_ALTITUDE)" UUID="d2cdad8d-8c2e-4620-ba30-6f2c35d326de" />
+        <test type="Float" value="123456789" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="HanChan-V1-2-3/ SN-935-AAE" trigger="normal" ledAddress="SPEEDDisplay" ledConnector="2" ledModuleSize="8" ledPadding="True" ledPaddingChar="0" ledDigits="3,4,5,6,7" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c2557fbd-ab61-4c3b-aae5-a514452cb1f3">
+      <active>true</active>
+      <description>V/S 垂直速度值</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:N_FCU_VS)" UUID="aa0d539d-855c-4473-a338-4212c7b3734a" />
+        <test type="Float" value="123" />
+        <modifiers>
+          <transformation active="True" expression=" Abs($/100)" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+          <interpolation active="False">
+            <value x="0" y="0" />
+            <value x="1024" y="1024" />
+          </interpolation>
+        </modifiers>
+        <display type="Display Module" serial="HanChan-V1-2-3/ SN-935-AAE" trigger="normal" ledAddress="SPEEDDisplay" ledConnector="3" ledModuleSize="8" ledPadding="True" ledPaddingChar="0" ledDigits="2,3" />
+        <preconditions>
+          <precondition type="config" active="true" ref="06535bc2-b646-4db8-9091-f1d36415bbaf" operand="!=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="96d077b3-42db-4798-8c02-3b3aba0ee85c">
+      <active>true</active>
+      <description>V/S 负号</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:N_FCU_VS)" UUID="aa0d539d-855c-4473-a338-4212c7b3734a" />
+        <test type="String" value="123" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="True" value="0" operand="&lt;" ifValue="'-'" elseValue=" " />
+        </modifiers>
+        <display type="Display Module" serial="HanChan-V1-2-3/ SN-935-AAE" trigger="normal" ledAddress="SPEEDDisplay" ledConnector="2" ledModuleSize="8" ledPadding="False" ledPaddingChar="0" ledDigits="0" />
+        <preconditions>
+          <precondition type="config" active="true" ref="06535bc2-b646-4db8-9091-f1d36415bbaf" operand="!=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="389604e9-6277-4244-8b04-0c6511335c83">
+      <active>true</active>
+      <description>V/S 小零点</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="True" value="0" operand="=" ifValue="oo" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="HanChan-V1-2-3/ SN-935-AAE" trigger="normal" ledAddress="SPEEDDisplay" ledConnector="3" ledModuleSize="8" ledPadding="False" ledPaddingChar="0" ledDigits="0,1" />
+        <preconditions>
+          <precondition type="config" active="true" ref="06535bc2-b646-4db8-9091-f1d36415bbaf" operand="!=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="fb9cd0d6-03ee-40a4-8771-d1d30cd5815c">
+      <active>true</active>
+      <description>V/S  破折号</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <test type="String" value="----" />
+        <modifiers>
+          <comparison active="True" value="0" operand="=" ifValue="'----'" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="HanChan-V1-2-3/ SN-935-AAE" trigger="normal" ledAddress="SPEEDDisplay" ledConnector="3" ledModuleSize="8" ledPadding="False" ledPaddingChar="0" ledDigits="0,1,2,3" />
+        <preconditions>
+          <precondition type="config" active="true" ref="06535bc2-b646-4db8-9091-f1d36415bbaf" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="2d6d6457-3c6c-461e-8a5f-83eeae6d3b88">
+      <active>true</active>
+      <description>V/S  破折号 第一位</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <test type="String" value="----" />
+        <modifiers>
+          <comparison active="True" value="0" operand="=" ifValue="'----'" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="HanChan-V1-2-3/ SN-935-AAE" trigger="normal" ledAddress="SPEEDDisplay" ledConnector="2" ledModuleSize="8" ledPadding="False" ledPaddingChar="0" ledDigits="0" />
+        <preconditions>
+          <precondition type="config" active="true" ref="06535bc2-b646-4db8-9091-f1d36415bbaf" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="06535bc2-b646-4db8-9091-f1d36415bbaf">
+      <active>true</active>
+      <description>V/S 破折号 标识</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:B_FCU_VERTICALSPEED_DASHED)" UUID="04d343c2-c109-4e74-93ad-dc23a18342b4" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="HanChan-V1-2-3/ SN-935-AAE" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="fc6ab70b-38b3-42cb-9b9e-3a254231e84d">
+      <active>true</active>
+      <description>AP1 LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:I_FCU_AP1)" UUID="fe498ce3-5f9c-487d-bdd3-234b7e1b1219" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="HanChan-V1-2-3/ SN-935-AAE" trigger="normal" pin="AP1 LED" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="3c6a4a31-d084-4f89-9c25-ca006baee467">
+      <active>true</active>
+      <description>AP2 LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:I_FCU_AP2)" UUID="5fa59c9e-5c44-446f-a280-e44857102d42" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="HanChan-V1-2-3/ SN-935-AAE" trigger="normal" pin="AP2 LED" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b3151b00-88e5-470d-9fd2-0566f1130154">
+      <active>true</active>
+      <description>LOC LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:I_FCU_LOC)" UUID="00a6946d-3947-403c-b794-82cf27a9735a" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="HanChan-V1-2-3/ SN-935-AAE" trigger="normal" pin="LOC LED" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f2ca2ec4-b776-4d3c-ada9-91c996e11942">
+      <active>true</active>
+      <description>A THR LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:I_FCU_ATHR)" UUID="2afcc2b4-6770-4826-8e08-11627a8ab646" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="HanChan-V1-2-3/ SN-935-AAE" trigger="normal" pin="A THR LED" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="08df2775-fa3f-4292-818d-24d057fd929b">
+      <active>true</active>
+      <description>EXPED  LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:I_FCU_EXPED)" UUID="14bbde49-0e70-4fda-8735-aecc384af1f7" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="HanChan-V1-2-3/ SN-935-AAE" trigger="normal" pin="EXPED LED" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="5df0b735-2f25-4e21-962e-0c8302cf85f0">
+      <active>true</active>
+      <description>APPR LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:I_FCU_APPR)" UUID="c914f698-bf5c-4f9d-a9db-511c5031b0e9" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="HanChan-V1-2-3/ SN-935-AAE" trigger="normal" pin="APPR LED" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </outputs>
+  <inputs>
+    <config guid="7ce10fc1-5dfa-4317-893b-72c33b2e64d7">
+      <active>true</active>
+      <description>ALT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="HanChan-V1-2-3/ SN-935-AAE" name="ALT" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020CustomInputAction" command="(L:E_FCU_ALTITUDE) -- (&gt;L:E_FCU_ALTITUDE)" presetId="e83c6d89-81f4-4ed6-8e0c-6bb95d46521b" />
+          <onLeftFast />
+          <onRight type="MSFS2020CustomInputAction" command="(L:E_FCU_ALTITUDE) ++ (&gt;L:E_FCU_ALTITUDE)" presetId="c792e16a-4a32-40c2-8ba8-d5802a28760e" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="add92f58-d67c-4156-a433-26aadce4ae23">
+      <active>true</active>
+      <description>ALT  push</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="HanChan-V1-2-3/ SN-935-AAE" name="alt push" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:S_FCU_ALTITUDE) -- (&gt;L:S_FCU_ALTITUDE)" presetId="7d4f6201-b793-4bfa-baa0-cd748d2f3c01" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="61fde990-7f73-4679-8acb-589cb476a4a9">
+      <active>true</active>
+      <description>ALT pull</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="HanChan-V1-2-3/ SN-935-AAE" name="alt pull" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:S_FCU_ALTITUDE) ++ (&gt;L:S_FCU_ALTITUDE)" presetId="2753ecd4-1d1b-4297-83fe-ef29a478d5d6" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="050f7642-d11b-4382-bbac-8e2c8d8427fe">
+      <active>true</active>
+      <description>HDG</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="HanChan-V1-2-3/ SN-935-AAE" name="heading" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020CustomInputAction" command="(L:E_FCU_HEADING) -- (&gt;L:E_FCU_HEADING)" presetId="07bdaabc-80fb-4182-85cf-d932fe9e6c88" />
+          <onLeftFast />
+          <onRight type="MSFS2020CustomInputAction" command="(L:E_FCU_HEADING) ++ (&gt;L:E_FCU_HEADING)" presetId="0dd864dd-74ca-4012-b7e9-181756d4e2ce" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="94df7fbc-9475-4b45-bc0b-d8a6bc343948">
+      <active>true</active>
+      <description>HDG push</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="HanChan-V1-2-3/ SN-935-AAE" name="hea push" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:S_FCU_HEADING) -- (&gt;L:S_FCU_HEADING)" presetId="3f3d0eee-bcc6-4574-9836-35c3575534f6" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="7b8df343-af48-48d9-8ec0-accb706c71e7">
+      <active>true</active>
+      <description>HDG pull</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="HanChan-V1-2-3/ SN-935-AAE" name="hea pull" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:S_FCU_HEADING) ++ (&gt;L:S_FCU_HEADING)" presetId="d2435805-fc79-4be5-9c2c-6dca31cecac4" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="00d2b0e6-45ef-4e43-b409-78ccd16c8973">
+      <active>true</active>
+      <description>SPEED</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="HanChan-V1-2-3/ SN-935-AAE" name="SPEED" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020CustomInputAction" command="(L:E_FCU_SPEED) -- (&gt;L:E_FCU_SPEED)" presetId="9998b6fc-6a19-46b0-a2c7-0071f70c3e1f" />
+          <onLeftFast />
+          <onRight type="MSFS2020CustomInputAction" command="(L:E_FCU_SPEED) ++ (&gt;L:E_FCU_SPEED)" presetId="87f04f23-c3d9-4af5-9095-54ad8342192f" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c56d5163-6ee1-4720-bed2-1ab9c7cc0e11">
+      <active>true</active>
+      <description>SPEED pull</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="HanChan-V1-2-3/ SN-935-AAE" name="SPEED pull" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:S_FCU_SPEED) ++ (&gt;L:S_FCU_SPEED)" presetId="4069b97d-e257-4638-8b6d-eb25b43ce09a" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="213f55de-887c-4d5f-860b-767915b9a55a">
+      <active>true</active>
+      <description>SPEED PUSH</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="HanChan-V1-2-3/ SN-935-AAE" name="SPEED push" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:S_FCU_SPEED) -- (&gt;L:S_FCU_SPEED)" presetId="b881c745-f6ae-4f34-8d34-cf04bd6b7700" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="ce83ad4b-a46c-4a9e-b441-0f45f5dd44a1">
+      <active>true</active>
+      <description>VS</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="HanChan-V1-2-3/ SN-935-AAE" name="VS" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020CustomInputAction" command="(L:E_FCU_VS) -- (&gt;L:E_FCU_VS)" presetId="0eda9b7a-487c-4d77-8370-93f3dd236007" />
+          <onLeftFast />
+          <onRight type="MSFS2020CustomInputAction" command="(L:E_FCU_VS) ++ (&gt;L:E_FCU_VS)" presetId="219fa6ca-32fa-4f39-97b3-553fddc5a36e" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="fe65b8d0-1b86-4854-8fc2-bbdc87e23197">
+      <active>true</active>
+      <description>VS push</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="HanChan-V1-2-3/ SN-935-AAE" name="VS push" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:S_FCU_VERTICAL_SPEED) -- (&gt;L:S_FCU_VERTICAL_SPEED)" presetId="0ef228fd-f370-449c-9bfa-3d2a67b2e92c" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="7ec24bda-e5bf-43b9-b63c-da5caf52750f">
+      <active>true</active>
+      <description>VS pull</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="HanChan-V1-2-3/ SN-935-AAE" name="VS pull" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:S_FCU_VERTICAL_SPEED) ++ (&gt;L:S_FCU_VERTICAL_SPEED)" presetId="cbbd7140-de3b-4920-8be8-e39a6cabe1bd" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b24b363a-0edf-407b-9bc6-0de7c80dbf3c">
+      <active>true</active>
+      <description>ALT 100</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="HanChan-V1-2-3/ SN-935-AAE" name="ALT 100" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="0 (&gt;L:S_FCU_ALTITUDE_SCALE)" presetId="9230eeb4-6a87-4676-815c-fd95f5ddc531" />
+          <onRelease type="MSFS2020CustomInputAction" command="(L:S_FCU_ALTITUDE_SCALE, Bool) if{ 0 (&gt;L:S_FCU_ALTITUDE_SCALE) } els{ 1 (&gt;L:S_FCU_ALTITUDE_SCALE) }" presetId="fb5f941f-dfed-4e50-b974-4d6966e93877" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="95ec121d-f028-4c6e-8592-746b5e36a71b">
+      <active>true</active>
+      <description>ALT 1000</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="HanChan-V1-2-3/ SN-935-AAE" name="ALT 1000" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;L:S_FCU_ALTITUDE_SCALE)" presetId="5b62317c-8a7f-4ca0-8d04-5a1fbf700171" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="5911a577-55c3-4264-ae50-8fefd41e4b8c">
+      <active>true</active>
+      <description>AP1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="HanChan-V1-2-3/ SN-935-AAE" name="AP1 Button" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:S_FCU_AP1) ++ (&gt;L:S_FCU_AP1)" presetId="2e62a568-081c-4a58-af37-0e867d17f2c2" />
+          <onRelease type="MSFS2020CustomInputAction" command="(L:S_FCU_AP1) ++ (&gt;L:S_FCU_AP1)" presetId="877312a0-fa5c-48ee-9991-56642b7fe918" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="cab3d5b1-a55d-4d0c-a696-6f36051e0359">
+      <active>true</active>
+      <description>A THR</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="HanChan-V1-2-3/ SN-935-AAE" name="A THR button" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:S_FCU_ATHR) ++ (&gt;L:S_FCU_ATHR)" presetId="fabd2612-1e49-4728-9882-3a8dd352ed7f" />
+          <onRelease type="MSFS2020CustomInputAction" command="(L:S_FCU_ATHR) ++ (&gt;L:S_FCU_ATHR)" presetId="44632ffe-476d-4ada-ab45-6f629c67fdd5" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="2339b13d-fa02-4862-b528-2bcaf420fcde">
+      <active>true</active>
+      <description>APPR</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="HanChan-V1-2-3/ SN-935-AAE" name="APPR button" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:S_FCU_APPR) ++ (&gt;L:S_FCU_APPR)" presetId="515ac50d-03d7-4ea6-8172-eaf81f6c8745" />
+          <onRelease type="MSFS2020CustomInputAction" command="(L:S_FCU_APPR) ++ (&gt;L:S_FCU_APPR)" presetId="12153059-2694-42b2-bcfe-d3070f5f49b5" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="84cca974-be53-4acc-a6a7-a09aefb550bc">
+      <active>true</active>
+      <description>SPD MACH Button</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="HanChan-V1-2-3/ SN-935-AAE" name="SPD MACH Button" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:S_FCU_SPD_MACH) ++ (&gt;L:S_FCU_SPD_MACH)" presetId="d36af5d0-7ba9-4208-9940-2e9706d77c7f" />
+          <onRelease type="MSFS2020CustomInputAction" command="(L:S_FCU_SPD_MACH) ++ (&gt;L:S_FCU_SPD_MACH)" presetId="688e9d4a-3f12-4c95-8dcc-4b9e280eaf66" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e0fd5aae-4307-4390-8d29-03ae799c8cd7">
+      <active>true</active>
+      <description>AP2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="HanChan-V1-2-3/ SN-935-AAE" name="AP2 Button" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:S_FCU_AP2) ++ (&gt;L:S_FCU_AP2)" presetId="48936111-653b-453f-9db4-c395a65a2d19" />
+          <onRelease type="MSFS2020CustomInputAction" command="(L:S_FCU_AP2) ++ (&gt;L:S_FCU_AP2)" presetId="ec884367-ce14-491f-be52-4dd937fc1ee1" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c5a5872d-51a3-4d5d-9d59-6c5c22c3d144">
+      <active>true</active>
+      <description>LOC</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="HanChan-V1-2-3/ SN-935-AAE" name="LOC Button" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:S_FCU_LOC) ++ (&gt;L:S_FCU_LOC)" presetId="b031644f-0cb2-4d14-8e1b-ec027efff422" />
+          <onRelease type="MSFS2020CustomInputAction" command="(L:S_FCU_LOC) ++ (&gt;L:S_FCU_LOC)" presetId="339ab122-17ae-4cf4-a02d-a08887ab48c4" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="05848704-936f-401b-a299-237e80b44fb4">
+      <active>true</active>
+      <description>EXPED</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="HanChan-V1-2-3/ SN-935-AAE" name="EXPED Button" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:S_FCU_EXPED) ++ (&gt;L:S_FCU_EXPED)" presetId="f72a8782-2c6c-4b60-89d6-0b9e83e93c07" />
+          <onRelease type="MSFS2020CustomInputAction" command="(L:S_FCU_EXPED) ++ (&gt;L:S_FCU_EXPED)" presetId="63edda47-169e-4c26-96c9-ab9bfab99b6e" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e1570abe-efd4-4ef3-82e5-e6f91a5480b1">
+      <active>false</active>
+      <description>HDG TRK</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="HanChan-V1-2-3/ SN-935-AAE" name="HDG TRK Button" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:S_FCU_HDGVS_TRKFPA) ++ (&gt;L:S_FCU_HDGVS_TRKFPA)" presetId="601d3171-145f-4326-8318-22dbc89f2b38" />
+          <onRelease type="MSFS2020CustomInputAction" command="(L:S_FCU_HDGVS_TRKFPA) ++ (&gt;L:S_FCU_HDGVS_TRKFPA)" presetId="9385fc71-e821-42ff-a298-303ea3095351" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="9ee28fdf-ec22-4f97-95fc-778332afa94a">
+      <active>true</active>
+      <description>metric ALT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="HanChan-V1-2-3/ SN-935-AAE" name="Metric ALT Butto" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:S_FCU_METRIC_ALT) ++ (&gt;L:S_FCU_METRIC_ALT)" presetId="7babb3ad-c213-498a-97e1-e1b8148a98dc" />
+          <onRelease type="MSFS2020CustomInputAction" command="(L:S_FCU_METRIC_ALT) ++ (&gt;L:S_FCU_METRIC_ALT)" presetId="21f82bac-c4d5-407a-bc49-d62dcfcc5d4c" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>

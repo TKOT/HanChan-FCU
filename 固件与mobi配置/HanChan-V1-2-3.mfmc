@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleType>MobiFlight Mega</ModuleType>
+  <ModuleName>HanChan-V1-2-3</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <Button Name="SPEED push" Pin="2" />
+  <Button Name="SPEED pull" Pin="3" />
+  <Encoder Name="SPEED" PinLeft="4" PinRight="5" EncoderType="0" />
+  <Button Name="hea push" Pin="6" />
+  <Button Name="hea pull" Pin="7" />
+  <Encoder Name="heading" PinLeft="8" PinRight="9" EncoderType="0" />
+  <Button Name="alt push" Pin="10" />
+  <Button Name="alt pull" Pin="11" />
+  <Encoder Name="ALT" PinLeft="12" PinRight="13" EncoderType="0" />
+  <Button Name="ALT 100" Pin="14" />
+  <Button Name="VS push" Pin="15" />
+  <Button Name="VS pull" Pin="16" />
+  <Encoder Name="VS" PinLeft="17" PinRight="18" EncoderType="0" />
+  <Button Name="SPD MACH Button" Pin="19" />
+  <Button Name="Metric ALT Butto" Pin="20" />
+  <Button Name="HDG TRK Butto" Pin="21" />
+  <Button Name="LOC Button" Pin="22" />
+  <Output Name="LOC LED" Pin="23" />
+  <Button Name="A THR button" Pin="24" />
+  <Output Name="A THR LED" Pin="25" />
+  <Button Name="AP1 Button" Pin="26" />
+  <Output Name="AP1 LED" Pin="27" />
+  <Button Name="AP2 Button" Pin="28" />
+  <Output Name="AP2 LED" Pin="29" />
+  <Button Name="EXPED Button" Pin="30" />
+  <Output Name="EXPED LED" Pin="31" />
+  <Button Name="APPR button" Pin="32" />
+  <Output Name="APPR LED" Pin="33" />
+  <LedModule Name="SPEEDDisplay" ModelType="0" DinPin="54" ClsPin="55" ClkPin="56" Brightness="4" NumModules="3" />
+  <LedModule Name="VSDisplay" ModelType="0" DinPin="57" ClsPin="58" ClkPin="59" Brightness="2" NumModules="1" />
+</Config>

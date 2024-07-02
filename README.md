@@ -1,10 +1,10 @@
-# HanChan-FCU
+# HanChan-FCU（寒蝉FCU）
 
 ![1719900580627](image/README/1719900580627.png)
 
 ## 项目简介
 
-这个是基于MobiFlight固件与Arduino mega2650开发板自制的空客Airbus A320的FCU（飞行控制单元），推拉机械结构参考使用了用户@Santi Luib III。
+HanChan-FCU（寒蝉FCU）这个是基于MobiFlight固件与Arduino mega2650开发板自制的空客Airbus A320的FCU（飞行控制单元），推拉机械结构参考使用了用户@Santi Luib III。
 
 基于mobiflight固件，所以此项目的FCU能支持配置到市面上几乎所有主流的模拟飞行平台和机型，且硬件维护成本较低，采用金属外壳。
 

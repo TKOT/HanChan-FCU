@@ -16,6 +16,10 @@ HanChan-FCU（寒蝉FCU）这个是基于MobiFlight固件与Arduino mega2650开�
 
 希望大家之后也能发布相关学习经验 来提高中文网上社区环境。
 
+项目整体介绍视频：[点击此文字](https://www.bilibili.com/video/BV154421D7D3/)
+
+硬件制作教程视频：[点击此文字](https://www.bilibili.com/video/BV18z421q7wh)
+
 讨论群：923213555
 
 ## 版权控制

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleType>MobiFlight RaspiPico</ModuleType>
+  <ModuleName>HanChan-V1-2-3</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <InputShiftRegister Name="Buttons" LatchPin="18" ClockPin="17" DataPin="16" NumModules="2" />
+  <ShiftRegister Name="LEDS" LatchPin="13" ClockPin="12" DataPin="11" NumModules="1" />
+  <LedModule Name="Displays" ModelType="0" DinPin="8" ClsPin="9" ClkPin="10" Brightness="15" NumModules="3" />
+  <Encoder Name="Speed" PinLeft="0" PinRight="1" EncoderType="0" />
+  <Encoder Name="Heading" PinLeft="2" PinRight="3" EncoderType="0" />
+  <Encoder Name="Alt" PinLeft="4" PinRight="5" EncoderType="0" />
+  <Encoder Name="VS" PinLeft="6" PinRight="7" EncoderType="0" />
+</Config>
